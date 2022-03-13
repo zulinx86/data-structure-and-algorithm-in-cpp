@@ -77,7 +77,7 @@ public:
 	}
 
 	void show() {
-		__show(root);
+		__show(root, "", false);
 		cout << endl;
 	}
 
@@ -129,13 +129,17 @@ private:
 		return NULL;
 	}
 
-	void __show(Node *node) {
-		if (!node)
-			return;
+	void __show(Node *node, string prefix, bool left) {
+		cout << prefix << (left ? "├──" : "└──");
 
-		__show(node->left);
-		cout << node->val << " ";
-		__show(node->right);
+		if (!node) {
+			cout << endl;
+			return;
+		}
+
+		cout << node->val << endl;
+		__show(node->left, prefix + (left ? "|  " : "   "), true);
+		__show(node->right, prefix + (left ? "|  " : "   "), false);
 	}
 };
 
