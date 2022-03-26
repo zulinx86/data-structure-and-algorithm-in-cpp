@@ -23,21 +23,19 @@ static void __quick_sort(vector<int> &arr, int left, int right) {
 	if (left >= right)
 		return;
 
-	int pivot = arr[left];
-	int lower = left, upper = right;
-	while (lower < upper) {
-		while (lower < upper && arr[upper] > pivot)
-			--upper;
+	int mid = (left + right) / 2;
+	int pivot = arr[mid];
+	swap(arr[mid], arr[right]);
 
-		while (lower < upper && arr[lower] <= pivot)
-			++lower;
-
-		swap(arr[lower], arr[upper]);
+	int i = left;
+	for (int j = left; j < right; ++j) {
+		if (arr[j] < pivot)
+			swap(arr[i++], arr[j]);
 	}
+	swap(arr[i], arr[right]);
 
-	swap(arr[left], arr[upper]);
-	__quick_sort(arr, left, upper - 1);
-	__quick_sort(arr, upper + 1, right);
+	__quick_sort(arr, left, i - 1);
+	__quick_sort(arr, i + 1, right);
 }
 
 void quick_sort(vector<int> &arr, const int n) {
