@@ -1,3 +1,11 @@
+/*
+ * Comb Sort
+ * N: the number of items in the given array
+ * p: a number of increment
+ * Time complexity: O(N^2 / 2^p)
+ * Space complexity: O(1)
+ */
+
 #include <iostream>
 #include <vector>
 #include <random>
