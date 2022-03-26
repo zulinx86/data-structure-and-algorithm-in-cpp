@@ -3,8 +3,7 @@
  * N: the number of items in the given array
  * Average time complexity: O(N log N)
  * Worst time complexity: O(N)
- * Average space complexity: O(N log N)
- * Worst space complexity: O(N)
+ * Space complexity: O(log N)
  */
 
 #include <iostream>
@@ -34,8 +33,13 @@ static void __quick_sort(vector<int> &arr, int left, int right) {
 	}
 	swap(arr[i], arr[right]);
 
-	__quick_sort(arr, left, i - 1);
-	__quick_sort(arr, i + 1, right);
+	if (i - left <= right - i) {
+		__quick_sort(arr, left, i - 1);
+		__quick_sort(arr, i + 1, right);
+	} else {
+		__quick_sort(arr, i + 1, right);
+		__quick_sort(arr, left, i - 1);
+	}
 }
 
 void quick_sort(vector<int> &arr, const int n) {
