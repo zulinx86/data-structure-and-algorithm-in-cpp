@@ -1,3 +1,12 @@
+/*
+ * Quick Sort
+ * N: the number of items in the given array
+ * Average time complexity: O(N log N)
+ * Worst time complexity: O(N)
+ * Average space complexity: O(N log N)
+ * Worst space complexity: O(N)
+ */
+
 #include <iostream>
 #include <vector>
 #include <random>

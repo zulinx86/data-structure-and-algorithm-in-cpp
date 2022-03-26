@@ -1,3 +1,10 @@
+/*
+ * Bubble Sort
+ * N: the number of items in the given array
+ * Time complexity: O(N^2)
+ * Space complexity: O(1)
+ */
+
 #include <iostream>
 #include <vector>
 #include <random>
