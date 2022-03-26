@@ -12,16 +12,11 @@
 using namespace std;
 
 void bubble_sort(vector<int> &arr, const int n) {
-	for (int i = 0; i < n; ++i) {
-		int min_idx = i, min_val = arr[i];
-		for (int j = i + 1; j < n; ++j) {
-			if (arr[j] <= min_val) {
-				min_idx = j;
-				min_val = arr[j];
-			}
-		}			
-		arr[min_idx] = arr[i];
-		arr[i] = min_val;
+	for (int i = 1; i < n; ++i) {
+		for (int j = 0; j < n - i; ++j) {
+			if (arr[j] > arr[j + 1])
+				swap(arr[j], arr[j + 1]);
+		}
 	}
 }
 
