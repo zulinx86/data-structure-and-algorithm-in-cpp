@@ -37,3 +37,12 @@
 	- Worst time complexity: O(n^2)
 	- Space complexity: O(log n)
 	- Stable: No
+
+
+## Search Algorithm
+- [Linear Search](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/search/linear_search.cpp)
+	- Time complexity: O(n)
+	- Space complexity: O(1)
+- [Binary Search](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/search/binary_search.cpp)
+	- Time complexity: O(log n)
+	- Space complexity: O(1)
