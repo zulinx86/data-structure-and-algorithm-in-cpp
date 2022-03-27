@@ -49,3 +49,6 @@
 - [Self-Organizing Array Search](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/search/self_organizing_array_search.cpp)
 	- Time complexity: O(n)
 	- Space complexity: O(1)
+- [Self-Orginizing List Search](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/search/self_organizing_list_search.cpp)
+	- Time complexity: O(n)
+	- Space complexity: O(1)
