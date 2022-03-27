@@ -16,6 +16,10 @@
 	- Time complexity: O(n^2)
 	- Space complexity: O(1)
 	- Stable: Yes
+- [Gnome Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/gnome_sort.cpp)
+	- Time complexity: O(n^2)
+	- Space complexity: O(1)
+	- Stable: Yes
 - [Selection Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/selection_sort.cpp)
 	- Time complexity: O(n^2)
 	- Space complexity: O(1)
