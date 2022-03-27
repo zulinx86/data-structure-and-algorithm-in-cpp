@@ -20,6 +20,10 @@
 	- Time complexity: O(n^2)
 	- Space complexity: O(1)
 	- Stable: Yes
+- [Heap Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/heap_sort.cpp)
+	- Time complexity: O(n log n)
+	- Space complexity: O(1)
+	- Stable: No
 - [Merge Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/merge_sort.cpp)
 	- Time complexity: O(n log n)
 	- Space complexity: O(n)
