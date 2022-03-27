@@ -45,15 +45,18 @@ int main() {
 	vector<int> arr(n);
 	random_device rnd;
 	for (int i = 0; i < n; ++i)
-		arr[i] = rnd() % 100;
+		arr[i] = rnd() % 1000;
 
 	cout << "before: ";
 	show(arr);
 
+	auto start = chrono::system_clock::now();
 	comb_sort(arr, n);
+	auto end = chrono::system_clock::now();
 
 	cout << "after: ";
 	show(arr);
 
+	cout << "time: " << chrono::duration_cast<chrono::microseconds>(end - start).count() << " [us]" << endl;
 	return 0;
 }
