@@ -52,3 +52,14 @@
 - [Self-Orginizing List Search](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/search/self_organizing_list_search.cpp)
 	- Time complexity: O(n)
 	- Space complexity: O(1)
+
+
+## List
+- [Singly Linked List](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/list/singly_linked_list.cpp)
+	- Insert: O(1)
+	- Erase: O(n)
+	- Search: O(n)
+- [Doubly Linked List](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/list/doubly_linked_list.cpp)
+	- Insert: O(1)
+	- Erase: O(1)
+	- Search: O(n)
