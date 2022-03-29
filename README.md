@@ -28,13 +28,17 @@
 	- Time complexity: O(n log n)
 	- Space complexity: O(1)
 	- Stable: No
-- [Merge Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/merge_sort.cpp)
+- [Merge Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/merge_sort.cpp) <- C++'s `stable_sort()`
 	- Time complexity: O(n log n)
 	- Space complexity: O(n)
 	- Stable: Yes
 - [Quick Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/quick_sort.cpp)
 	- Time complexity: O(n log n)
 	- Worst time complexity: O(n^2)
+	- Space complexity: O(log n)
+	- Stable: No
+- [Introspective Sort](https://github.com/zulinx86/data-structure-and-algorithm-in-cpp/blob/main/sort/introspective_sort.cpp) <- C++'s `sort()`
+	- Time complexity: O(n log n)
 	- Space complexity: O(log n)
 	- Stable: No
 
