@@ -40,6 +40,8 @@ void heap_sort(vector<int> &arr, const int n) {
 
 			if (arr[curr] < arr[next])
 				swap(arr[curr], arr[next]);
+			else
+				break;
 
 			curr = next;
 			next = 2 * curr + 1;
